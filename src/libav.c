@@ -84,6 +84,9 @@ streaming_component_type2codec_id(streaming_component_type_t type)
   case SCT_HEVC:
     codec_id = AV_CODEC_ID_HEVC;
     break;
+  case SCT_CAVS:
+    codec_id = AV_CODEC_ID_CAVS;
+    break;
   case SCT_AC3:
     codec_id = AV_CODEC_ID_AC3;
     break;
@@ -141,6 +144,9 @@ codec_id2streaming_component_type(enum AVCodecID id)
     break;
   case AV_CODEC_ID_HEVC:
     type = SCT_HEVC;
+    break;
+  case AV_CODEC_ID_CAVS:
+    type = SCT_CAVS;
     break;
   case AV_CODEC_ID_AC3:
     type = SCT_AC3;

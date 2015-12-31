@@ -2251,6 +2251,10 @@ psi_parse_pmt
     case 0x24:
       hts_stream_type = SCT_HEVC;
       break;
+	  
+    case 0x42:
+      hts_stream_type = SCT_CAVS;
+      break;
 
     default:
       break;
